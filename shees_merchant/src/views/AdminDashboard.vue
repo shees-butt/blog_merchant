@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav></Nav>
+    <Nav :title="admin"></Nav>
     <v-container class="text-center mt-5">
       <h1 class="admin-heading">Admin Panel</h1>
     </v-container>
@@ -97,7 +97,17 @@
   </div>
 </template>
 
-<script setup>
-import Footer from "@/components/Footer.vue";
-import Nav from "@/components/Nav.vue";
+<script>
+import Nav from "@/components/Nav.vue"; // Check the correct path
+
+export default {
+  components: {
+    Nav,
+  },
+  data() {
+    return {
+      admin: 'Admin',
+    };
+  },
+};
 </script>

@@ -6,7 +6,7 @@
           <v-list-item-icon>
             <v-icon>mdi-menu</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Your Dashboard</v-list-item-title>
+          <v-list-item-title>{{title}} Dashboard</v-list-item-title>
         </v-list-item>
         <v-divider></v-divider>
         <v-list-item @click="navigateTo('users')">
@@ -46,6 +46,10 @@
 
 <script>
 export default {
+  
+  props: {
+    title: String,
+  },
   data() {
     return {
       drawer: false,
