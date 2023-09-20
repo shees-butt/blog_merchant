@@ -22,9 +22,39 @@ const routes = [
         component: () => import('@/views/Login.vue'),
       },
       {
-        path: '/dashboard',
-        name: 'dashboard',
-        component: () => import('@/views/Dashboard.vue'),
+        path: '/admindashboard',
+        name: 'admindashboard',
+        component: () => import('@/views/AdminDashboard.vue'),
+      },
+      {
+        path: '/userdashboard',
+        name: 'userdashboard',
+        component: () => import('@/views/UserDashboard.vue'),
+      },
+      {
+        path: '/userlist',
+        name: 'userlist',
+        component: () => import('@/views/UserList.vue'),
+      },
+      {
+        path: '/postlist',
+        name: 'postlist',
+        component: () => import('@/views/PostList.vue'),
+      },
+      {
+        path: '/createpost',
+        name: 'createpost',
+        component: () => import('@/views/CreatePost.vue'),
+      },
+      {
+        path: '/viewpost',
+        name: 'viewpost',
+        component: () => import('@/views/ViewPost.vue'),
+      },
+      {
+        path: '/postdetails',
+        name: 'postdetails',
+        component: () => import('@/views/PostDetails.vue'),
       }
     ],
   },
