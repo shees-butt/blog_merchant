@@ -6,7 +6,7 @@
           <v-list-item-icon>
             <v-icon>mdi-menu</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>{{title}} Dashboard</v-list-item-title>
+          <v-list-item-title>{{title}}</v-list-item-title>
         </v-list-item>
         <v-divider></v-divider>
         <v-list-item @click="navigateTo('users')">
@@ -28,7 +28,7 @@
       <v-app-bar-nav-icon @click="toggleDrawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title class="ml-0 pl-3">
-        Your Dashboard
+        {{title}}
       </v-toolbar-title>
 
       <v-spacer></v-spacer>

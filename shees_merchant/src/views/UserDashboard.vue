@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav></Nav>
+    <Nav title="User Dashboard"></Nav>
     <v-container class="text-center mt-5">
       <h1 class="admin-heading">User Panel</h1>
     </v-container>
@@ -53,7 +53,14 @@
   </div>
 </template>
 
-<script setup>
-import Footer from "@/components/Footer.vue";
+<script>
 import Nav from "@/components/Nav.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  components: {
+    Nav,
+    Footer
+  },
+};
 </script>
