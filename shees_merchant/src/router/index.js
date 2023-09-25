@@ -52,9 +52,14 @@ const routes = [
         component: () => import('@/views/ViewPost.vue'),
       },
       {
-        path: '/postdetails',
+        path: '/postdetails/:id',
         name: 'postdetails',
         component: () => import('@/views/PostDetails.vue'),
+      },
+      {
+        path: '/editpost',
+        name: 'editpost',
+        component: () => import('@/views/EditPost.vue'),
       }
     ],
   },
